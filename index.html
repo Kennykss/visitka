@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef Konstantine - Грузинская Кухня</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    header h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .content h3 {
+      margin: 20px 0 15px;
+      color: #1a1a1a;
+      font-size: 1.5em;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .service-item {
+      background: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 1em;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .menu-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    .contacts {
+      margin-top: 25px;
+      font-size: 1em;
+    }
+
+    .contacts p {
+      margin: 8px 0;
+    }
+
+    .contacts a {
+      color: #ff9900;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.6em; }
+      header h2 { font-size: 1em; }
+      .hero { height: 50vh; }
+      .hero-text { font-size: 1em; padding: 8px 15px; }
+      .service-item { min-width: 160px; font-size: 0.9em; }
+    }
+
+    @media (max-width: 480px) {
+      .service-item { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chef Konstantine</h1>
+    <h2>Grill & BBQ Cuisine</h2>
+  </header>
+
+  <div class="hero">
+    <img src="/images/hero.jpg" alt="Грузинская кухня" class="hero-img">
+    <div class="hero-text">Грузинская кухня — откройте новый вкус!</div>
+  </div>
+
+  <div class="content">
+    <p>Наша кухня — это искусство создания идеальных моментов, адаптированных к вашим желаниям. Мы создадим меню, подчёркивающее стиль вашего мероприятия, и обеспечим безупречное обслуживание для каждого гостя.</p>
+
+    <div class="services">
+      <div class="service-item">Доставка и takeaway</div>
+      <div class="service-item">Кейтеринг</div>
+      <div class="service-item">Семейные мероприятия</div>
+      <div class="service-item">Корпоративные события</div>
+    </div>
+
+    <h3>Блюда меню</h3
