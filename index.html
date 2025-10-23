@@ -136,6 +136,7 @@
       margin-top: auto;
     }
 
+    /* Адаптивность для маленьких экранов (уже есть) */
     @media (max-width: 768px) {
       header h1 { font-size: 1.6em; }
       header h2 { font-size: 1em; }
@@ -147,6 +148,30 @@
     @media (max-width: 480px) {
       .service-item { width: 100%; justify-content: center; }
     }
+
+    /* НОВЫЕ СТИЛИ ДЛЯ БОЛЬШИХ ЭКРАНОВ (ПК) */
+    @media (min-width: 1200px) {
+      .content {
+        padding: 20px 40px; /* Больше отступов для комфорта */
+      }
+      .hero {
+        height: 70vh; /* Выше для больших экранов */
+      }
+      .hero-text {
+        font-size: 1.5em; /* Больший текст */
+        padding: 15px 30px;
+      }
+      .menu-img {
+        max-width: 400px; /* Большее меню на ПК */
+      }
+      .services {
+        gap: 20px; /* Больше пространства между карточками */
+      }
+      .service-item {
+        min-width: 250px; /* Большие карточки */
+        font-size: 1.1em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -157,7 +182,6 @@
   </header>
 
   <div class="hero">
-    <!-- ИСПРАВЛЕННЫЙ ПУТЬ: images/hero.jpg БЕЗ / -->
     <img src="images/hero.jpg" alt="Georgian Cuisine" class="hero-img">
     <div class="hero-text">Georgian cuisine — discover a new taste!</div>
   </div>
@@ -173,7 +197,6 @@
     </div>
 
     <h3>Menu</h3>
-    <!-- ИСПРАВЛЕННЫЙ ПУТЬ: images/menu.jpg БЕЗ / -->
     <img src="images/menu.jpg" alt="Menu" class="menu-img">
 
     <div class="contacts">
