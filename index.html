@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой сайт-визитка</title>
+  <title>Константин - Грузинская Кухня</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,78 +11,111 @@
       padding: 0;
       text-align: center;
       background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #333;
     }
 
     header {
-      background-color: #333;
+      background-color: #1a1a1a;
       color: white;
       padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
     .hero-img {
       width: 100%;
       max-height: 60vh;
-      object-fit: cover; /* чтобы картинка красиво масштабировалась */
+      object-fit: cover;
+      display: block;
     }
 
-    nav {
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
       margin: 20px 0;
     }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff6600;
+    .service-item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
     }
 
     .menu-img {
       display: block;
       margin: 20px auto;
-      width: 150px;
+      width: 250px;
       cursor: pointer;
       transition: transform 0.3s;
     }
 
     .menu-img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     footer {
-      background-color: #333;
+      background-color: #1a1a1a;
       color: white;
       padding: 15px;
-      margin-top: 40px;
+      margin-top: auto;
+    }
+
+    a {
+      color: #ff9900;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Добро пожаловать на мой сайт!</h1>
+    <h1>Chef Konstantine</h1>
+    <h2>Grill & BBQ Cuisine</h2>
   </header>
 
-  <!-- Hero Image через тег img -->
-  <img src="hero.jpg" alt="Hero Image" class="hero-img">
+  <img src="images/hero.jpg" alt="Грузинская кухня" class="hero-img">
 
-  <!-- Навигация -->
-  <nav>
-    <a href="#home">Главная</a>
-    <a href="#about">О себе</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
+  <div class="content">
+    <h3>Грузинская кухня - откройте новый вкус!</h3>
+    <p>Наша кухня — это искусство создания идеальных моментов, адаптированных к вашим желаниям. Мы создадим меню, подчёркивающее стиль вашего мероприятия, и обеспечим безупречное обслуживание для каждого гостя.</p>
 
-  <!-- Menu Image -->
-  <img src="menu.png" alt="Menu Image" class="menu-img">
+    <div class="services">
+      <div class="service-item">📦 Доставка и takeaway</div>
+      <div class="service-item">🍽️ Кейтеринг</div>
+      <div class="service-item">👨‍👩‍👧 Семейные мероприятия</div>
+      <div class="service-item">🏢 Корпоративные события</div>
+    </div>
+
+    <img src="images/menu.png" alt="Блюда меню" class="menu-img">
+
+    <p><strong>Контакты:</strong><br>
+    ☎️ +44 7493 981414<br>
+    🌐 <a href="https://basingstoke-georgian-kitchen.com" target="_blank">basingstoke-georgian-kitchen</a><br>
+    📍 Basingstoke, 3 Lulworth Way, RG23 7RQ</p>
+  </div>
 
   <footer>
-    &copy; 2025 Мой сайт-визитка
+    &copy; 2025 Chef Konstantine - Все права защищены
   </footer>
-
 </body>
 </html>
