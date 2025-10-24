@@ -52,7 +52,6 @@
     .slider-images {
       display: flex;
       width: 100%;
-      transition: transform 0.5s ease;
     }
 
     .slide {
@@ -65,30 +64,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-
-    .slider-buttons {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      padding: 0 20px;
-    }
-
-    .slider-button {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 1.5em;
-      border-radius: 50%;
-    }
-
-    .slider-button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
     }
 
     .content {
@@ -174,8 +149,6 @@
 
     @media (max-width: 480px) {
       .service-item { width: 100%; justify-content: center; }
-      .slider-buttons { padding: 0 10px; }
-      .slider-button { padding: 5px; font-size: 1.2em; }
     }
 
     /* Адаптивность для больших экранов */
@@ -200,10 +173,6 @@
       <div class="slide">
         <img src="images/hero.jpg" alt="Georgian Cuisine">
       </div>
-    </div>
-    <div class="slider-buttons">
-      <button class="slider-button" onclick="plusSlides(-1)">&#10094;</button>
-      <button class="slider-button" onclick="plusSlides(1)">&#10095;</button>
     </div>
   </div>
 
@@ -231,20 +200,5 @@
   <footer>
     &copy; 2025 Chef Konstantine — Georgian Cuisine in Basingstoke
   </footer>
-
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelector('.slider-images');
-    const totalSlides = 1;
-
-    function plusSlides(n) {
-      slideIndex += n;
-      if (slideIndex < 0) slideIndex = totalSlides - 1;
-      if (slideIndex >= totalSlides) slideIndex = 0;
-      slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-    }
-
-    setInterval(() => plusSlides(1), 5000);
-  </script>
 </body>
 </html>
