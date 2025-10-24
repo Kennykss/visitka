@@ -67,19 +67,6 @@
       object-fit: cover;
     }
 
-    .slide-text {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 1.3em;
-      font-weight: bold;
-    }
-
     .slider-buttons {
       position: absolute;
       top: 50%;
@@ -177,11 +164,11 @@
       margin-top: auto;
     }
 
+    /* Адаптивность для маленьких экранов */
     @media (max-width: 768px) {
       header h1 { font-size: 1.6em; }
       header h2 { font-size: 1em; }
       .slide { height: 300px; }
-      .slide-text { font-size: 1em; padding: 8px 15px; }
       .service-item { min-width: 160px; font-size: 0.9em; }
     }
 
@@ -191,10 +178,10 @@
       .slider-button { padding: 5px; font-size: 1.2em; }
     }
 
+    /* Адаптивность для больших экранов */
     @media (min-width: 1200px) {
       .content { padding: 20px 40px; }
       .slide { height: 500px; }
-      .slide-text { font-size: 1.5em; padding: 15px 30px; }
       .menu-img { max-width: 400px; }
       .services { gap: 20px; }
       .service-item { min-width: 250px; font-size: 1.1em; }
@@ -212,7 +199,6 @@
     <div class="slider-images">
       <div class="slide">
         <img src="images/hero.jpg" alt="Georgian Cuisine">
-        <div class="slide-text">Georgian cuisine — discover a new taste!</div>
       </div>
     </div>
     <div class="slider-buttons">
